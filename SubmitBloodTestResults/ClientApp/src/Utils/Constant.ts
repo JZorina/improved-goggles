@@ -1,0 +1,1 @@
+export const SUUCCESS_STATUS = 200;
