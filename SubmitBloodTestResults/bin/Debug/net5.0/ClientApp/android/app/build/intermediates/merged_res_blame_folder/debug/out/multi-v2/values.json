@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ASUS\\Desktop\\yulia\\Projects\\HeartMe\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\ASUS\\Desktop\\yulia\\Projects\\SubmitBloodTestResults\\SubmitBloodTestResults\\ClientApp\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\ASUS\\Desktop\\yulia\\Projects\\SubmitBloodTestResults\\SubmitBloodTestResults\\ClientApp\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "44",
+                        "endOffsets": "56"
+                    },
+                    "to": {
+                        "startLines": "312",
+                        "startColumns": "4",
+                        "startOffsets": "20173",
+                        "endColumns": "44",
+                        "endOffsets": "20213"
+                    }
+                },
                 {
                     "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-3\\42fc10495a8bc8a878c7280888ad32dd\\transformed\\jetified-savedstate-1.1.0\\res\\values\\values.xml",
                     "from": {
@@ -40,37 +57,22 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ASUS\\Desktop\\yulia\\Projects\\HeartMe\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\ASUS\\Desktop\\yulia\\Projects\\SubmitBloodTestResults\\SubmitBloodTestResults\\ClientApp\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
-                        "startLines": "1",
+                        "startLines": "3",
                         "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "44",
-                        "endOffsets": "56"
+                        "startOffsets": "54",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "267"
                     },
                     "to": {
-                        "startLines": "312",
+                        "startLines": "382",
                         "startColumns": "4",
-                        "startOffsets": "20173",
-                        "endColumns": "44",
-                        "endOffsets": "20213"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ASUS\\Desktop\\yulia\\Projects\\HeartMe\\android\\app\\build\\generated\\res\\resValues\\debug\\values\\gradleResValues.xml",
-                    "from": {
-                        "startLines": "6,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "161,269",
-                        "endColumns": "63,68",
-                        "endOffsets": "220,333"
-                    },
-                    "to": {
-                        "startLines": "281,282",
-                        "startColumns": "4,4",
-                        "startOffsets": "18031,18095",
-                        "endColumns": "63,68",
-                        "endOffsets": "18090,18159"
+                        "startOffsets": "26677",
+                        "endLines": "385",
+                        "endColumns": "12",
+                        "endOffsets": "26890"
                     }
                 },
                 {
@@ -148,22 +150,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ASUS\\Desktop\\yulia\\Projects\\HeartMe\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\ASUS\\Desktop\\yulia\\Projects\\SubmitBloodTestResults\\SubmitBloodTestResults\\ClientApp\\android\\app\\build\\generated\\res\\resValues\\debug\\values\\gradleResValues.xml",
                     "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "267"
+                        "startLines": "6,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "161,269",
+                        "endColumns": "63,68",
+                        "endOffsets": "220,333"
                     },
                     "to": {
-                        "startLines": "382",
-                        "startColumns": "4",
-                        "startOffsets": "26677",
-                        "endLines": "385",
-                        "endColumns": "12",
-                        "endOffsets": "26890"
+                        "startLines": "281,282",
+                        "startColumns": "4,4",
+                        "startOffsets": "18031,18095",
+                        "endColumns": "63,68",
+                        "endOffsets": "18090,18159"
                     }
                 },
                 {

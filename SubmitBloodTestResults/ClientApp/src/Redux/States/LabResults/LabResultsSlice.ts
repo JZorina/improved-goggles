@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 interface LabResultsSliceState {
     bloodTest:{
         testName:string;
-        testValue:number;
+        testValue:number|null;
         testCategory:string;
         testResult:boolean;
     }
@@ -22,7 +22,7 @@ export const LabResults = createSlice({
     reducers: {     
     setBloodTestInputs: (
         state: LabResultsSliceState,
-        action: PayloadAction<{testName:string,testValue:number}>,
+        action: PayloadAction<{testName:string,testValue:number|null}>,
       ) => {
         const {testName,testValue} = action.payload;
         state.bloodTest.testName = testName;
@@ -33,6 +33,8 @@ export const LabResults = createSlice({
         action: PayloadAction<{testCategory:string,testResult:boolean}>,
       ) => {
         const {testCategory,testResult} = action.payload;
+        console.log('testCategory',testCategory)
+        console.log('testResult',testResult)
         state.bloodTest.testCategory = testCategory;
         state.bloodTest.testResult = testResult;
       },

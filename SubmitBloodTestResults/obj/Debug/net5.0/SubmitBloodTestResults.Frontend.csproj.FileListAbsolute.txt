@@ -117,8 +117,15 @@ C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResul
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\ClientApp\android\app\build\intermediates\processed_res\debug\out\output-metadata.json
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\ClientApp\android\app\build\intermediates\signing_config_versions\debug\signing-config-versions.json
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\ClientApp\android\app\build\outputs\apk\debug\output-metadata.json
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\ClientApp\app.json
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\ClientApp\ios\HeartMe\Images.xcassets\AppIcon.appiconset\Contents.json
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\ClientApp\ios\HeartMe\Images.xcassets\Contents.json
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\ClientApp\package.json
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\ClientApp\src\Assets\LottieAnimations\happy.json
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\ClientApp\src\Assets\LottieAnimations\sad.json
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\ClientApp\src\Assets\LottieAnimations\sad_.json
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\ClientApp\src\Assets\LottieAnimations\smile.json
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\ClientApp\tsconfig.json
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\SubmitBloodTestResults.Frontend.exe
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\SubmitBloodTestResults.Frontend.deps.json
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\SubmitBloodTestResults.Frontend.runtimeconfig.json
@@ -132,7 +139,9 @@ C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResul
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\FuzzySharp.dll
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\Microsoft.AspNetCore.SpaServices.Extensions.dll
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\Serilog.dll
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\SubmitBloodTestResults.Application.dll
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\SubmitBloodTestResults.Application.pdb
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\obj\Debug\net5.0\SubmitBloodTestResults.Frontend.csproj.AssemblyReference.cache
@@ -164,4 +173,3 @@ C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResul
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\obj\Debug\net5.0\ref\SubmitBloodTestResults.Frontend.dll
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\obj\Debug\net5.0\SubmitBloodTestResults.Frontend.pdb
 C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\obj\Debug\net5.0\SubmitBloodTestResults.Frontend.genruntimeconfig.cache
-C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults\bin\Debug\net5.0\Microsoft.AspNetCore.SpaServices.Extensions.dll

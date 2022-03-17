@@ -11,6 +11,8 @@ namespace SubmitBloodTestResults
 {
     public class Startup
     {
+        private static readonly string _cors = "customCors";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -21,6 +23,18 @@ namespace SubmitBloodTestResults
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: _cors,
+                    builder =>
+                    {
+                        builder.WithOrigins("http://192.168.18.51:5000")
+                            .AllowAnyMethod()
+                            .AllowAnyHeader()
+                            .AllowCredentials();
+                    });
+            });
+
             services.AddControllersWithViews();
            // services.AddSpaStaticFiles(configuration => { configuration.RootPath = "ClientApp/build"; });
             services.AddTransient<ITestResultsService, TestResultsService>();
@@ -32,6 +46,8 @@ namespace SubmitBloodTestResults
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors(_cors);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

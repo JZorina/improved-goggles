@@ -1,69 +1,55 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   SafeAreaView,
-  ScrollView,
+  ActivityIndicator,
   StatusBar,
-  StyleSheet,
   View,
 } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { BasicInput, Lottie, StandardText , StandartButton} from '../Components';
 import { GeneralState, LabResultsState } from '../Redux';
-import { General } from '../Redux/States/General/GeneralSlice';
+import { colors } from '../Theme/Colors';
 import LottieAnimations from '../Theme/LottieAnimations';
 import { dictionary } from '../Utils/Texts';
-import Fuse from 'fuse.js';
-const data = {  
-  "bloodTestConfig":[  
-     {  
-        "name":"HDL Cholesterol",
-        "threshold":40
-     },
-     {  
-        "name":"LDL Cholesterol",
-        "threshold":100
-     },
-     {  
-        "name":"A1C",
-        "threshold":4
-     }
-  ]
-}
+import styles from './SubmitBloodTestResult.style';
 const SubmitBloodTestResult = () => {
   const dispatch = useDispatch();
   const labResultsStatus =  useSelector(GeneralState.Selectors.selectBloodTestDataStatus);
+  const labResultsState =  useSelector(LabResultsState.Selectors.selectBloodTestData);
   const [displayResult, setdisplayResult] = useState<boolean>(false);
-  const [imageType, setImageType] = useState<number>(0);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [imageType, setImageType] = useState<boolean>(false);
   const [categoryName, setCategoryName] = useState<string>('');
   const [testName, setTestName] = useState<string>('');
-  const [testValue, setTestValue] = useState<number>(0);
-  const options = {
-    includeScore: true,
-    keys: ['name'],
-    
+  const [testValue, setTestValue] = useState<number|null>(null);
+
+useEffect(()=>{
+  if(labResultsStatus){
+    setImageType(labResultsState.testResult);
+    setCategoryName(labResultsState.testCategory);
+    setLoading(false);
+    setdisplayResult(labResultsStatus);
   }
+},[labResultsState])
 
   const handlePress = async() => {
-    //ADD VALIDATION!!
-    setdisplayResult(!displayResult);
-    //const fuse = new Fuse(data.bloodTestConfig,options);
-   // const result = fuse.search(testName);
-
-//     console.log('testName',testName);
-//     console.log('result',result);
-//     console.log('scores',result.map(i=>i.score));
-// const scores = result.map(i=>i.score);
-// var min = Math.min(...scores);
-// var minResult = result.filter(i=>i.score == min)
-// console.log('min',minResult);
-
-      dispatch(LabResultsState.Actions.setBloodTestInputs({testName,testValue}));
-      await dispatch(LabResultsState.Thunks.getLabResults(()=> {
-        console.log('dddddddddddddddddddddd',labResultsStatus)
-        setdisplayResult(labResultsStatus)
-      }));
+    setLoading(true);
+    setdisplayResult(false);
+    dispatch(LabResultsState.Actions.setBloodTestInputs({testName,testValue}));
+    await dispatch(LabResultsState.Thunks.getLabResults(success));
   }
   
+  const fail = () =>{
+    if(!labResultsStatus){
+      setLoading(false);
+      setdisplayResult(false);
+    }
+  }
+  const success = () =>{
+      setLoading(false);
+      setdisplayResult(true);
+  }
+
   return (
     <SafeAreaView style={styles.flex}>
       <StatusBar />
@@ -91,48 +77,28 @@ const SubmitBloodTestResult = () => {
         </StandartButton>
       </View>
         <View style={styles.buttomContainer}>
-       {displayResult && 
+       {
+        displayResult && 
         <View>
-            <StandardText style={styles.buttomLabel}>{'dddddddddddd'}</StandardText>
+            <StandardText style={styles.buttomLabel}>{categoryName}</StandardText>
             <Lottie
               loop
-              animation={imageType ? LottieAnimations.sad :LottieAnimations.smile}
+              animation={imageType ? LottieAnimations.smile :LottieAnimations.sad}
               style={styles.lottieScale}
               skipAnimation={false}
             />
         </View>
        }
-        </View>
+       {
+         loading &&
+         <ActivityIndicator size="large" color={colors.primaryBlue} />
+       }
+      </View>
     
     </SafeAreaView>
   );
 };
-const styles = StyleSheet.create({
-    centerFlex:{
-        flex:1,
-        justifyContent:'center', alignItems:'center'
-    },
-    flex:{
-        flex:1,
-    },
-    standartScale:{
-        height:'50%',width:'70%'
-    },
-    lottieScale:{
-      height:150,
-      width:150
-    },
-    bigScale:{
-        flex:1, justifyContent:'center', alignItems:'center'
-    },
-    buttomLabel:{
-      textAlign:'center'
-    },
-    buttomContainer:{
-        flex:2.5, justifyContent:'center', alignItems:'center'
-    },
 
-})
 
 
 export default SubmitBloodTestResult;

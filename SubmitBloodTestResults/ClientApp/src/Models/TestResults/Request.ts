@@ -1,5 +1,5 @@
 export interface GetTestResultsRequest {
     name: string;
-    value: number;
+    value: number |null;
 }
   

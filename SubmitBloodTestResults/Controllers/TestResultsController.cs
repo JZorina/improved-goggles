@@ -24,17 +24,15 @@ namespace SubmitBloodTestResults.Frontend.Controllers
         // POST: api/TestResults/get-blood-tests
         [HttpPost("get-blood-tests")]
         [ProducesResponseType(400)]
-        [ProducesResponseType(404)]
         [ProducesResponseType(200)]
         public async Task<IActionResult> GetBloodTests(BloodTestRequest body)
         {
             RunValidationForBloodResultTest(body);
             var result = await _testResultsService.GetBloodTestResults(body);
             return GetResponse(result);
-            
+
         }
 
- 
         private bool RunValidationForBloodResultTest(BloodTestRequest body)
         {
             var validator = new BloodTestResultValidator();

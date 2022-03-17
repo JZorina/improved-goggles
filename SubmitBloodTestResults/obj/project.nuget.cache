@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sDbx5aik7ydPOuk0h/ow7v2iCTx+bSQk21zkD2q5I0lJ2Wbn69pIQCz2GnwVgb88OR/K86G3nGBgDE9OPY1g0w==",
+  "dgSpecHash": "3gX7uhQT+M8muw3/zUz3NUV6CxIFrBzE9rEztK1ht/1U/jI8QNVr+o8kgJSueLd8rdHriZkFxS381Ef9JsKvKw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ASUS\\Desktop\\yulia\\Projects\\SubmitBloodTestResults\\SubmitBloodTestResults\\SubmitBloodTestResults.Frontend.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,8 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\ASUS\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512"
   ],
   "logs": []
 }
