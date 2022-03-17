@@ -39,12 +39,6 @@ useEffect(()=>{
     await dispatch(LabResultsState.Thunks.getLabResults(success));
   }
   
-  const fail = () =>{
-    if(!labResultsStatus){
-      setLoading(false);
-      setdisplayResult(false);
-    }
-  }
   const success = () =>{
       setLoading(false);
       setdisplayResult(true);
